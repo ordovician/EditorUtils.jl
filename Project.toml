@@ -1,0 +1,7 @@
+name = "EditorUtils"
+uuid = "07e8d736-a932-11e8-2236-f5e38f8337b4"
+authors = ["Erik Engheim <erik.engheim@mac.com>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"

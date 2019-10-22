@@ -17,8 +17,8 @@ function capitalize(s::AbstractString)
 end
 
 "Find the length of longest string in list. So for strings `[\"aa\", \"bbb\", \"c\"]` the result would be 3, since thel longest string \"bbb\" is 3 characters long"
-function length_of_longest(strings::Vector{T}) where T <: AbstractString
-    reduce(0, strings) do len, s
+function length_of_longest(strings::Vector{<: AbstractString})
+    reduce(strings, init = 0) do len, s
         max(len, length(s))
     end
 end
